@@ -33,12 +33,12 @@ int main(int argc, char** argv)
     return -1;
   }
 
-  result = device->startImu();
+  /* result = device->startImu();
   if (result != K4A_RESULT_SUCCEEDED)
   {
     RCLCPP_ERROR_STREAM(node->get_logger(),"Failed to start IMU");
     return -2;
-  }
+  } */
 
   RCLCPP_INFO(node->get_logger(),"K4A Started");
 
